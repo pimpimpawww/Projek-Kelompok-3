@@ -1,0 +1,754 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary-teal: #00b894;
+    --primary-blue: #0984e3;
+    --text-dark: #2d3436;
+    --text-grey: #636e72;
+    --bg-light: #f9f9f9;
+    --white: #ffffff;
+    --shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: var(--white);
+    color: var(--text-dark);
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* NAVBAR */
+header {
+    padding: 20px 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-blue);
+}
+
+.logo-icon {
+    background: var(--primary-blue);
+    color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--white); /* Default to white for hero section */
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+/* Adjust nav color for non-hero items if needed or mix-blend-mode */
+/* Since the right side is teal, links there should be white. Left side is white, links dark? 
+   Actually, looking at the image, the nav is fully on the Teal part except maybe the Logo.
+   Wait, the image shows "Home Order Book Catering Login Cart" all on the Teal background.
+   So Nav text is white. Logo is on White background (top left).
+*/
+.logo {
+    color: var(--primary-blue); /* On white bg */
+}
+
+/* HERO SECTION */
+.hero {
+    position: relative;
+    min-height: 100vh; /* Full screen height */
+    display: flex;
+    align-items: center;
+    padding-top: 80px; /* Space for navbar */
+    overflow: hidden;
+}
+
+/* The curved background shape */
+.hero-bg-shape {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 65%; /* Covers right side */
+    height: 100%;
+    background: var(--primary-teal);
+    border-bottom-left-radius: 40% 50%; /* Creates the big curve */
+    z-index: -1;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 500px;
+    padding-right: 50px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    color: var(--primary-blue); /* Based on image, text is blueish */
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    color: var(--text-grey);
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Search Box in Hero */
+.search-box {
+    background: var(--white);
+    padding: 10px;
+    border-radius: 50px; /* Pill shape */
+    display: flex;
+    align-items: center;
+    box-shadow: var(--shadow);
+    width: 100%;
+    max-width: 450px;
+    border: 1px solid #eee;
+}
+
+.input-group {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    border-right: 1px solid #eee;
+}
+
+.input-group i {
+    color: var(--primary-blue);
+    margin-right: 10px;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+}
+
+.location-group {
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.location-group select {
+    border: none;
+    outline: none;
+    color: var(--text-grey);
+    background: transparent;
+    cursor: pointer;
+}
+
+.location-icon {
+    color: var(--primary-blue);
+    background: #eef4ff;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.hero-image {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img.main-dish {
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 50%; /* Circular image */
+    box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+    border: 10px solid rgba(255,255,255,0.2); /* Subtle border */
+    z-index: 2;
+    position: relative;
+}
+
+.floating-item {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: var(--primary-teal);
+}
+
+.item-1 {
+    width: 60px;
+    height: 60px;
+    top: 20px;
+    left: 20px;
+    background-image: url('https://placehold.co/60x60/orange/white?text=Salmon');
+    background-size: cover;
+}
+
+.item-2 {
+    width: 50px;
+    height: 50px;
+    bottom: 50px;
+    right: 0;
+    background-image: url('https://placehold.co/50x50/green/white?text=Veg');
+    background-size: cover;
+}
+
+/* FEATURES SECTION */
+.features {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.section-header h2 {
+    font-size: 36px;
+    color: var(--primary-blue);
+    margin-bottom: 10px;
+}
+
+.section-header p {
+    color: var(--text-grey);
+    margin-bottom: 50px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.feature-card {
+    background: var(--white);
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: var(--shadow); /* Soft shadow */
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.icon-box {
+    width: 80px;
+    height: 80px;
+    /* Icon styling based on image - icons look like blue silhouettes */
+    color: var(--primary-blue);
+    font-size: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-card h3 {
+    margin-bottom: 15px;
+    color: var(--text-dark);
+}
+
+.feature-card p {
+    color: var(--text-grey);
+    margin-bottom: 25px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.btn-outline {
+    background: var(--primary-blue);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-outline:hover {
+    background: #0870c0;
+}
+
+/* MEALS SECTION */
+.meals {
+    padding: 50px 0 100px;
+}
+
+.meals-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.meals-header h2 {
+    font-size: 32px;
+    color: var(--primary-blue);
+}
+
+.meals-search {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 5px 15px;
+    border-radius: 30px;
+    width: 300px;
+}
+
+.meals-search input {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 5px;
+}
+
+.meals-search i {
+    color: var(--text-grey);
+}
+
+.filter-btn {
+    background: var(--primary-blue);
+    color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.categories {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cat-btn {
+    background: transparent;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #aaa;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+}
+
+.cat-btn.active, .cat-btn:hover {
+    color: var(--primary-blue);
+    font-weight: 600;
+}
+
+.cat-btn i {
+    font-size: 18px;
+}
+
+.meal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.meal-card {
+    background: var(--white);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: 0.3s;
+    position: relative;
+}
+
+.meal-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img {
+    height: 180px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.meal-card h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: var(--text-dark);
+}
+
+.rating {
+    font-size: 12px;
+    color: #f1c40f; /* Star color */
+    margin-bottom: 15px;
+}
+
+.rating span {
+    color: #aaa;
+    margin-left: 5px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: var(--text-grey);
+}
+
+.card-footer .location i {
+    color: var(--text-grey);
+    margin-right: 3px;
+}
+
+.card-footer .price {
+    font-weight: 700;
+    color: var(--text-dark);
+    font-size: 16px;
+}
+
+.fav-icon {
+    color: var(--primary-teal);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.view-more-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.view-more {
+    background: var(--primary-blue);
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(9, 132, 227, 0.3);
+}
+
+/* FOOTER SECTION */
+.footer-section {
+    position: relative;
+    background: var(--primary-blue);
+    color: white;
+    padding-top: 100px;
+    margin-top: 100px;
+}
+
+/* Creating the wave top effect for footer */
+.footer-wave {
+    position: absolute;
+    top: -80px; /* Pull it up */
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: var(--primary-blue);
+    border-top-left-radius: 50% 100px;
+    border-top-right-radius: 50% 100px;
+    /* To make it look like the image (wavy): */
+    /* A simple curved top is easiest. For complex wave we'd use SVG. */
+    /* Let's stick to a simple curve as CSS-only wave is complex */
+    border-radius: 100% 0 0 0 / 100px 0 0 0; /* Simulates one side curve */
+    /* Actually, let's use clip-path for a nice wave if possible, or just a curved top */
+    border-radius: 0;
+    background: transparent;
+}
+
+/* Let's just style the footer container itself with a curved top background */
+.footer-section {
+    background: var(--primary-blue);
+    /* Create a curve at the top */
+    border-top-left-radius: 30% 100px;
+    border-top-right-radius: 30% 100px; 
+    /* This creates a hill. The image has a valley? Or a wave.
+       Image: Left side phone images are on white/blue overlap. Right side is blue.
+       The blue shape comes up from bottom right.
+    */
+    border-radius: 0;
+    /* Let's try to mimic the image exactly:
+       A blue shape at the bottom.
+    */
+    background: transparent; /* Reset */
+    padding: 0;
+    margin-top: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-section::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Cover full footer area */
+    background: var(--primary-blue);
+    z-index: -1;
+    /* Create the wave shape at the top of footer */
+    clip-path: ellipse(150% 100% at 50% 100%); /* Simple curve */
+    /* Or better: */
+    border-top-left-radius: 50% 20%;
+    border-top-right-radius: 50% 20%;
+    height: 80%; /* Only cover bottom part? */
+}
+
+/* Wait, looking at image:
+   The footer blue background starts low on left and goes high on right?
+   No, it covers the whole bottom area. The phones are "standing" on the blue wave.
+*/
+
+.footer-section {
+    background: var(--primary-blue);
+    /* Let's just use a standard background for now, adding a curve at top */
+    border-top-left-radius: 50% 100px;
+    border-top-right-radius: 0;
+    /* Adjust to match image: Looks like a wave going up then down */
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%); /* Angled top? No */
+    
+    /* Better wave using radial gradient mask or just border radius */
+    border-radius: 0;
+    clip-path: none;
+    background: transparent;
+}
+
+.footer-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 85%; /* Adjust height */
+    background: var(--primary-blue);
+    z-index: -1;
+    border-top-left-radius: 200px; /* Curve */
+    border-top-right-radius: 0;
+}
+
+/* Let's rewrite footer HTML structure slightly in CSS by targeting pseudo elements */
+.footer-section {
+    position: relative;
+    padding-top: 50px;
+}
+
+.footer-section::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 85%;
+    background: var(--primary-blue);
+    z-index: -1;
+    border-top-left-radius: 50% 20%;
+    border-top-right-radius: 50% 5%;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 20px;
+}
+
+.app-preview {
+    flex: 1;
+    position: relative;
+    /* Phone image needs to sit on top of the blue wave */
+    display: flex;
+    justify-content: center;
+}
+
+.phone-mockup {
+    width: 250px;
+    border-radius: 30px;
+    border: 8px solid #333;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    z-index: 1;
+    transform: rotate(-5deg);
+    background: #fff;
+}
+
+.footer-details {
+    flex: 2;
+    color: white;
+}
+
+.cta-text h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.cta-text p {
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.app-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.app-btn {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.app-btn:hover {
+    background: white;
+    color: var(--primary-blue);
+}
+
+.app-btn i {
+    font-size: 20px;
+}
+
+.footer-links-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.footer-col h4 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.footer-col a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 14px;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.footer-col a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.copyright {
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding-top: 20px;
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    .hero-content {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-top: 50px;
+    }
+    
+    .hero-bg-shape {
+        width: 100%;
+        height: 50%;
+        border-radius: 0 0 50% 50%;
+    }
+
+    .hero-text {
+        padding-right: 0;
+        margin-top: 30px;
+    }
+
+    .search-box {
+        margin: 0 auto;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-links-grid {
+        grid-template-columns: repeat(2, 1fr);
+        text-align: left;
+    }
+    
+    .app-buttons {
+        justify-content: center;
+    }
+}

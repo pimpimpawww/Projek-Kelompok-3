@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Own Food</title>
+    <link rel="stylesheet" href="./home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="navbar-container">
+            <div class="logo">
+                <i class="fas fa-hat-chef" style="display:none;"></i> <!-- Using text or image for logo in CSS -->
+                <div class="logo-icon"><i class="fas fa-utensils"></i></div>
+                <span>OwnFood</span>
+            </div>
+            <nav>
+                <a href="#" class="active">Home</a>
+                <a href="#">Order</a>
+                <a href="#">Book</a>
+                <a href="#">Catering</a>
+                <a href="#">Login</a>
+                <a href="#" class="cart">Cart</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-bg-shape"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Find Your Food<br>Delivered Fresh & Hot</h1>
+                <p>You can order delivery, order catering, and book a table as you wish at your nearest location</p>
+
+                <div class="search-box">
+                    <div class="input-group">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="find nearest food here">
+                    </div>
+                    <div class="location-group">
+                        <select>
+                            <option>set location</option>
+                            <option>New York</option>
+                            <option>London</option>
+                        </select>
+                        <i class="fas fa-map-marker-alt location-icon"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <!-- Using a placeholder that looks like a food bowl -->
+                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Healthy Food Bowl" class="main-dish">
+                <!-- Floating elements (simulated with CSS or small images) -->
+                <div class="floating-item item-1"></div>
+                <div class="floating-item item-2"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Features</h2>
+                <p>Let's check our service below you will get best service</p>
+            </div>
+
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="icon-box">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Fast Delivery</h3>
+                    <p>You can fast order with delivery service, wait for minute then your food will come</p>
+                    <button class="btn-outline">Check Out</button>
+                </div>
+
+                <div class="feature-card">
+                    <div class="icon-box">
+                        <i class="fas fa-concierge-bell"></i>
+                    </div>
+                    <h3>Catering</h3>
+                    <p>Order some menu with package for event like wedding, gathering meeting, and other else</p>
+                    <button class="btn-outline">Check Out</button>
+                </div>
+
+                <div class="feature-card">
+                    <div class="icon-box">
+                        <i class="fas fa-chair"></i>
+                    </div>
+                    <h3>Book a Table</h3>
+                    <p>Book a table for your family set number of person & arrange the event enjoy without worrying overcrowded</p>
+                    <button class="btn-outline">Check Out</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MEALS -->
+    <section class="meals">
+        <div class="container">
+            <div class="meals-header">
+                <h2>Our Meals</h2>
+                <div class="meals-search">
+                    <input type="text" placeholder="search by name">
+                    <i class="fas fa-search"></i>
+                    <button class="filter-btn"><i class="fas fa-sliders-h"></i></button>
+                </div>
+            </div>
+
+            <div class="categories">
+                <button class="cat-btn active"><i class="fas fa-th-large"></i> All</button>
+                <button class="cat-btn"><i class="fas fa-tag"></i> Disc</button>
+                <button class="cat-btn"><i class="fas fa-bowl-rice"></i> Rice</button>
+                <button class="cat-btn"><i class="fas fa-hamburger"></i> Burger</button>
+                <button class="cat-btn"><i class="fas fa-pizza-slice"></i> Pizza</button>
+                <button class="cat-btn"><i class="fas fa-bread-slice"></i> Bread</button>
+                <button class="cat-btn"><i class="fas fa-bacon"></i> Noodle</button>
+                <button class="cat-btn"><i class="fas fa-coffee"></i> Drink</button>
+            </div>
+
+            <div class="meal-grid">
+                <!-- Card 1 -->
+                <div class="meal-card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1571407970349-bc16e6961501?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Spaghetti">
+                    </div>
+                    <div class="card-body">
+                        <h4>Spaghetti Bolognese</h4>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>(102 Reviews)</span>
+                        </div>
+                        <div class="card-footer">
+                            <span class="location"><i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia</span>
+                            <span class="price">$ 4.99</span>
+                            <i class="fas fa-heart fav-icon"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="meal-card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Burger">
+                    </div>
+                    <div class="card-body">
+                        <h4>Cheese Burger</h4>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>(85 Reviews)</span>
+                        </div>
+                        <div class="card-footer">
+                            <span class="location"><i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia</span>
+                            <span class="price">$ 5.25</span>
+                            <i class="fas fa-heart fav-icon"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="meal-card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Pizza">
+                    </div>
+                    <div class="card-body">
+                        <h4>Pizza Pepperoni</h4>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>(150 Reviews)</span>
+                        </div>
+                        <div class="card-footer">
+                            <span class="location"><i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia</span>
+                            <span class="price">$ 4.99</span>
+                            <i class="fas fa-heart fav-icon"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="meal-card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1552611052-33e04de081de?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Ramen">
+                    </div>
+                    <div class="card-body">
+                        <h4>Japanese Ramen</h4>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>(200 Reviews)</span>
+                        </div>
+                        <div class="card-footer">
+                            <span class="location"><i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia</span>
+                            <span class="price">$ 4.99</span>
+                            <i class="fas fa-heart fav-icon"></i>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Card 5 -->
+                 <div class="meal-card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Fried Chicken">
+                    </div>
+                    <div class="card-body">
+                        <h4>Fried Chicken</h4>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>(120 Reviews)</span>
+                        </div>
+                        <div class="card-footer">
+                            <span class="location"><i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia</span>
+                            <span class="price">$ 4.99</span>
+                            <i class="fas fa-heart fav-icon"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="meal-card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Macaroni">
+                    </div>
+                    <div class="card-body">
+                        <h4>Spicy Macaroni</h4>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>(95 Reviews)</span>
+                        </div>
+                        <div class="card-footer">
+                            <span class="location"><i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia</span>
+                            <span class="price">$ 4.99</span>
+                            <i class="fas fa-heart fav-icon"></i>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Card 7 -->
+                 <div class="meal-card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1603133872878-684f108fd1f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Fried Rice">
+                    </div>
+                    <div class="card-body">
+                        <h4>Special Fried Rice</h4>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>(110 Reviews)</span>
+                        </div>
+                        <div class="card-footer">
+                            <span class="location"><i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia</span>
+                            <span class="price">$ 4.99</span>
+                            <i class="fas fa-heart fav-icon"></i>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Card 8 -->
+                 <div class="meal-card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Noodle">
+                    </div>
+                    <div class="card-body">
+                        <h4>Chicken Noodle</h4>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>(145 Reviews)</span>
+                        </div>
+                        <div class="card-footer">
+                            <span class="location"><i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia</span>
+                            <span class="price">$ 4.99</span>
+                            <i class="fas fa-heart fav-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view-more-container">
+                <button class="view-more">View More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER / APP DOWNLOAD -->
+    <footer class="footer-section">
+        <div class="footer-wave"></div>
+        <div class="container footer-content">
+            <div class="app-preview">
+                <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="App Preview" class="phone-mockup">
+            </div>
+            
+            <div class="footer-details">
+                <div class="cta-text">
+                    <h2>STILL GET YOUR FAVORITE FOOD WHENEVER & WHEREVER</h2>
+                    <p>You can delivery, book a table, catering on your mobile</p>
+                    <div class="app-buttons">
+                        <button class="app-btn"><i class="fab fa-google-play"></i> Google Play</button>
+                        <button class="app-btn"><i class="fab fa-apple"></i> App Store</button>
+                    </div>
+                </div>
+
+                <div class="footer-links-grid">
+                    <div class="footer-col">
+                        <h4>Get Started</h4>
+                        <a href="#">Booking a table</a>
+                        <a href="#">Delivery</a>
+                        <a href="#">Catering</a>
+                        <a href="#">Find a place</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contact Us</h4>
+                        <a href="#">+62 253-0921</a>
+                        <a href="#">ownfood@mail.com</a>
+                        <a href="#">Jakarta, Indonesia</a>
+                        <a href="#">Gedung 21 Lt 11</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>About Us</h4>
+                        <a href="#">History</a>
+                        <a href="#">Career</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">News & Events</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Connect With Us</h4>
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+                
+                <div class="copyright">
+                    <p>All Right Reserved @2025. Designed By Semeru Zidan</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
