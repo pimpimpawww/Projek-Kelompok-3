@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f6f1e7;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  background: #efe6d3;
+}
+
+.navbar a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px;
+  background: #4b6f63;
+  color: white;
+}
+
+.hero-img {
+  width: 420px;
+}
+
+.hero button {
+  padding: 12px 28px;
+  background: #e68a3f;
+  border: none;
+  border-radius: 30px;
+  color: white;
+}
+
+.highlight {
+  text-align: center;
+  padding: 80px;
+}
+
+.circle-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.circle-card img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+
+.page {
+  padding: 80px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.product-card {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #4b6f63;
+  color: white;
+}
