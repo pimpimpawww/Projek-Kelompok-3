@@ -1,5 +1,20 @@
-document.querySelectorAll("button").forEach(btn => {
-  btn.addEventListener("click", () => {
-    alert("Terima kasih telah memilih makanan sehat kami! 🥗");
+// Tombol "Order Sekarang" ke Menu
+const orderBtn = document.getElementById("orderBtn");
+const menuSection = document.getElementById("menu");
+
+orderBtn.addEventListener("click", () => {
+  menuSection.scrollIntoView({
+    behavior: "smooth"
   });
 });
+
+// Tombol "Shop Now" ke halaman Our Menu
+const shopNowBtn = document.getElementById("shopnowbtn");
+
+if (shopNowBtn) {
+  shopNowBtn.addEventListener("click", () => {
+    window.location.href = "./product.html";
+  });
+}
+
+
