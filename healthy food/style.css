@@ -285,9 +285,9 @@ footer {
     box-shadow: var(--shadow);
     border: 1px solid rgba(255, 255, 255, 0.06);
 
-    display: grid;
-    grid-template-columns: 1.2fr 1fr 1fr;
-    gap: 18px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 footer h3 {
@@ -300,32 +300,75 @@ footer h3 {
 footer p {
     margin: 0;
     color: rgba(231, 246, 226, 0.9);
+    font-size: 14px;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .quick-links p {
+    display: flex;
+    gap: 15px;
 }
 
 #about-us {
-    margin-top: 18px;
-    background: var(--panel);
-    border: 1px solid var(--stroke);
-    border-radius: var(--radius-xl);
-    padding: 28px;
-    box-shadow: var(--shadow);
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: auto;
+    background-color: var(--green-700);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
 }
+
+#about-us .left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#about-us .right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 #about-us h2 {
-    margin: 0 0 14px 0;
-    font-family: ui-serif, Georgia, "Times New Roman", serif;
-    color: var(--green-900);
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: center;
 }
-#about-us h3 {
-    margin: 16px 0 8px 0;
-    font-family: ui-serif, Georgia, "Times New Roman", serif;
-    color: var(--green-900);
-}
+
 #about-us p,
-#about-us li {
-    color: var(--muted);
-}
 #about-us ul {
-    padding-left: 18px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+#about-us h3 {
+    font-size: 32px;
+    color: #fff;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#about-us ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+#about-us p:first-of-type {
+    margin-top: 10px;
 }
 
 #menu {
