@@ -107,8 +107,9 @@
                     />
                     <h3>Chia Delight Pudding</h3>
                 </div>
-            </div>
+        </section>
 
+        <section>
             <div class="menu-cta">
                 <p>
                     <strong>Ready to eat healthy?</strong><br />
