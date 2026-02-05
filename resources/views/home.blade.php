@@ -1,26 +1,12 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Bowlé</title>
-        <link rel="stylesheet" href="./style.css" />
-    </head>
-
-    <body>
-        <header>
-            <h2>Bowlé</h2>
-            <nav>
-                <a href="./home.html">Home</a>
-                <a href="./about.html">About</a>
-                <a href="./product.html">Our Menu</a>
-                <a href="./contact.html">Contact</a>
-            </nav>
-        </header>
-
-        <section>
+<section>
             <h1>Healthy & Organic Food</h1>
-            <p>Makanan sehat untuk tubuhmu, segar, natural dan bergizi.</p>
+            <p>
+                Makanan sehat untuk tubuhmu, segar, natural, dan bergizi. Bowlé
+                menghadirkan beragam menu sehat yang dibuat dari bahan pilihan
+                berkualitas. Setiap hidangan diracik secara fresh untuk menjaga
+                rasa dan nutrisi terbaik. Cocok untuk menemani gaya hidup sehat
+                dan aktif setiap hari.
+            </p>
             <button id="orderBtn">Order Now</button>
         </section>
 
@@ -129,20 +115,3 @@
                 <p>Bahan segar dipanen langsung dari petani lokal.</p>
             </div>
         </section>
-
-        <footer>
-            <h3>About Us</h3>
-            <p>
-                Menyediakan makanan sehat, fresh, dan natural untuk gaya hidup
-                lebih baik.
-            </p>
-
-            <h3>Quick Links</h3>
-            <p>Home | Shop | About | Contact</p>
-
-            <h3>Follow Us</h3>
-            <p>Instagram | Facebook | Twitter</p>
-        </footer>
-        <script src="./script.js"></script>
-    </body>
-</html>
