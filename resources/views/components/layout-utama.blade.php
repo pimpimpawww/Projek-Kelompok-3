@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Bowlé</title>
-        <link  href="{{asset('assets/style.css')}}"assets/style.css" />
+        <link rel="stylesheet" href="{{ asset('assets/style.css') }}" />
     </head>
 
     <body>
@@ -15,6 +15,6 @@
 
         {{$slot}}
         <x-footer></x-footer>
-        <script src="{{asset('assets/script.js')}}"></script>
+        <script src="{{ asset('assets/script.js') }}"></script>
     </body>
 </html>
