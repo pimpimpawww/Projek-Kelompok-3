@@ -118,7 +118,7 @@
                     </div>
 
                     <div class="member">
-                        <img src="img/najwa.jpeg" alt="Najwa Aulia" />
+                        <img src="./img/najwa.jpeg" alt="Najwa Aulia" />
                         <p>Najwa Aulia</p>
                     </div>
 
