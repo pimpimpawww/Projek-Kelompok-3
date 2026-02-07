@@ -1,23 +1,5 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Bowlé</title>
-        <link rel="stylesheet" href="../../public/assets/style.css" />
-    </head>
-
-    <body>
-        <header>
-            <h2>Bowlé</h2>
-            <nav>
-                <a href="./home.html">Home</a>
-                <a href="./about.html">About</a>
-                <a href="./product.html">Our Menu</a>
-                <a href="./contact.html">Contact</a>
-            </nav>
-        </header>
-
+<x-layout-utama>
+        {{-- isi halaman --}}
         <section id="menu">
             <div class="menu-header">
                 <h1>Our Healthy Menu</h1>
@@ -118,10 +100,5 @@
                 </p>
             </div>
         </section>
-
-        
-
-
-    </div>
-    </body>
-</html>
+        {{-- /isi halaman --}}
+</x-layout-utama>

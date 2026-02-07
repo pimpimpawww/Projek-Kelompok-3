@@ -1,6 +1,6 @@
 <nav>
-                <a href="./home.html">Home</a>
-                <a href="./about.html">About</a>
-                <a href="./product.html">Our Menu</a>
-                <a href="./contact.html">Contact</a>
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/product">Our Menu</a>
+                <a href="/contact">Contact</a>
             </nav>
