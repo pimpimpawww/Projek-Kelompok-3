@@ -95,27 +95,27 @@
 
                 <div class="team-members">
                     <div class="member">
-                        <img src="img/alika.jpeg" alt="Alika Gazella" />
+                        <img src="{{ asset('assets/img/alika.jpeg') }}" alt="Alika Gazella" />
                         <p>Alika Gazella</p>
                     </div>
 
                     <div class="member">
-                        <img src="./img/najwa.jpeg" alt="Najwa Aulia" />
+                        <img src="{{ asset('assets/img/najwa.jpeg') }}" alt="Najwa Aulia" />
                         <p>Najwa Aulia</p>
                     </div>
 
                     <div class="member">
-                        <img src="img/nilna.jpeg" alt="Nilna Armina" />
+                        <img src="{{ asset('assets/img/nilna.jpeg') }}" alt="Nilna Armina" />
                         <p>Nilna Armina</p>
                     </div>
 
                     <div class="member">
-                        <img src="img/nusa.jpeg" alt="Nusaiba Dzakiyah" />
+                        <img src="{{ asset('assets/img/nusa.jpeg') }}" alt="Nusaiba Dzakiyah" />
                         <p>Nusaiba Dzakiyah</p>
                     </div>
 
                     <div class="member">
-                        <img src="img/rif'ah.jpeg" alt="Rif'ah Syamilah" />
+                        <img src="{{ asset('assets/img/rifah.jpeg') }}" alt="Rif'ah Syamilah" />
                         <p>Rif'ah Syamilah</p>
                     </div>
                 </div>
