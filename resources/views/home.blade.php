@@ -63,7 +63,7 @@
         </div>
 
         <div>
-            <img src="{{ asset('assets/img/Puding Chia seed.jpg.jpeg') }}" alt="Pudding Chia Sead" width="120" />
+            <img src="{{ asset('assets/img/Puding Chia.jpeg') }}" alt="Pudding Chia Sead" width="120" />
             <p><strong>Pudding Chia Sead</strong></p>
             <p>$18.00</p>
         </div>

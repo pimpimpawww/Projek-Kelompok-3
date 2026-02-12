@@ -1,3 +1,4 @@
+<style padding></style>
 <footer>
             <div class="about-us">
                 <h3>About Us</h3>
