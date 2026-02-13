@@ -17,4 +17,22 @@ if (shopNowBtn) {
   });
 }
 
+document.getElementById("sendMessage").addEventListener("click", function (e) {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const message = document.getElementById("message").value.trim();
+  const warning = document.getElementById("warning");
+
+  if (name === "" || email === "" || message === "") {
+    warning.innerText = "Please fill in all fields first.";
+    warning.style.color = "red";
+    warning.style.display = "block";
+  } else {
+    warning.style.display = "none";
+    alert("Message sent successfully!");
+  }
+});
+
 
