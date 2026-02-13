@@ -1,23 +1,5 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Bowlé</title>
-        <link rel="stylesheet" href="../../public/assets/style.css" />
-    </head>
-
-    <body>
-        <header>
-            <h2>Bowlé</h2>
-            <nav>
-                <a href="./home.html">Home</a>
-                <a href="./about.html">About</a>
-                <a href="./product.html">Our Menu</a>
-                <a href="./contact.html">Contact</a>
-            </nav>
-        </header>
-
+<x-layout-utama>
+{{-- isi halaman --}}
         <section id="contact">
             <div class="contact-header">
                 <h1>Contact Us</h1>
@@ -113,27 +95,27 @@
 
                 <div class="team-members">
                     <div class="member">
-                        <img src="img/alika.jpeg" alt="Alika Gazella" />
+                        <img src="{{ asset('assets/img/alika.jpeg') }}" alt="Alika Gazella" />
                         <p>Alika Gazella</p>
                     </div>
 
                     <div class="member">
-                        <img src="./img/najwa.jpeg" alt="Najwa Aulia" />
+                        <img src="{{ asset('assets/img/najwa.jpeg') }}" alt="Najwa Aulia" />
                         <p>Najwa Aulia</p>
                     </div>
 
                     <div class="member">
-                        <img src="img/nilna.jpeg" alt="Nilna Armina" />
+                        <img src="{{ asset('assets/img/nilna.jpeg') }}" alt="Nilna Armina" />
                         <p>Nilna Armina</p>
                     </div>
 
                     <div class="member">
-                        <img src="img/nusa.jpeg" alt="Nusaiba Dzakiyah" />
+                        <img src="{{ asset('assets/img/nusa.jpeg') }}" alt="Nusaiba Dzakiyah" />
                         <p>Nusaiba Dzakiyah</p>
                     </div>
 
                     <div class="member">
-                        <img src="img/rif'ah.jpeg" alt="Rif'ah Syamilah" />
+                        <img src="{{ asset('assets/img/rifah.jpeg') }}" alt="Rif'ah Syamilah" />
                         <p>Rif'ah Syamilah</p>
                     </div>
                 </div>
@@ -145,5 +127,5 @@
                 </p>
             </div>
         </section>
-    </body>
-</html>
+{{-- /isi halaman --}}
+</x-layout-utama>

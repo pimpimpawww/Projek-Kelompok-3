@@ -1,29 +1,26 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bowlé</title>
-    <link rel="stylesheet"
-        href="
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bowlé</title>
+        <link rel="stylesheet" href="../../public/assets/style.css" />
     </head>
 
     <body>
         <header>
             <h2>Bowlé</h2>
             <nav>
-                <a href="./home.html">
-    Home</a>
-    <a href="./about.html">About</a>
-    <a href="./product.html">Our Menu</a>
-    <a href="./contact.html">Contact</a>
-    </nav>
-    </header>
+                <a href="./home.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./product.html">Our Menu</a>
+                <a href="./contact.html">Contact</a>
+            </nav>
+        </header>
 
-    <section id="about-us">
-        <div class="left-column">
-            <h2>About Us — Bowlé</h2>
+        <section id="about-us">
+            <div class="left-column">
+                <h2>About Us — Bowlé</h2>
 
             <p>
                 Welcome to <strong>Bowlé</strong> — tempat dimana makanan
@@ -46,26 +43,31 @@
                 hidup lebih produktif.
             </p>
 
-            <img
-                src="./img/10 Amazing Quinoa Recipes That'll Make You Forget All About Rice (You Won't Believe #4!) - JJ Barnes.jpg.jpeg" />
+                <img
+                    src="./img/10 Amazing Quinoa Recipes That'll Make You Forget All About Rice (You Won't Believe #4!) - JJ Barnes.jpg.jpeg"
+                />
 
-            <h3>Our Mission</h3>
-            <p>
-                Menjadikan gaya hidup sehat lebih mudah, lebih enak, dan
-                lebih kekinian untuk semua orang.
-            </p>
-            <img src="./img/Healthy Lifestyle and Practices_ Essential Habits for Optimal Wellbeing.jpg.jpeg"
-                alt="gambar Mission" />
+                <h3>Our Mission</h3>
+                <p>
+                    Menjadikan gaya hidup sehat lebih mudah, lebih enak, dan
+                    lebih kekinian untuk semua orang.
+                </p>
+                <img
+                    src="./img/Healthy Lifestyle and Practices_ Essential Habits for Optimal Wellbeing.jpg.jpeg"
+                    alt="gambar Mission"
+                />
 
-            <h3>Our Values</h3>
-            <ul>
-                <li>Fresh Ingredients</li>
-                <li>Nutritious Bowls</li>
-                <li>Clean Eating</li>
-                <li>Tasty & Fun</li>
-            </ul>
-            <img src="./img/Top view of breakfast ingredients by Edalin's Store on @creativemarket.jpg.jpeg"
-                alt="gambar value" />
+                <h3>Our Values</h3>
+                <ul>
+                    <li>Fresh Ingredients</li>
+                    <li>Nutritious Bowls</li>
+                    <li>Clean Eating</li>
+                    <li>Tasty & Fun</li>
+                </ul>
+                <img
+                    src="./img/Top view of breakfast ingredients by Edalin's Store on @creativemarket.jpg.jpeg"
+                    alt="gambar value"
+                />
 
             <p>
                 Buat kamu yang lagi mulai diet, nyari makanan ringan setelah
@@ -73,11 +75,10 @@
                 Bowlé adalah jawabannya!
             </p>
 
-            <p>
-                <strong>Healthy food, but make it delicious! 🥗✨</strong>
-            </p>
-        </div>
-    </section>
+                <p>
+                    <strong>Healthy food, but make it delicious! 🥗✨</strong>
+                </p>
+            </div>
+        </section>
     </body>
-
 </html>
