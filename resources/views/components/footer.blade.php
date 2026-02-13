@@ -1,3 +1,4 @@
+<style padding></style>
 <footer>
     <div class="about-us">
         <h3>About Us</h3>
@@ -12,8 +13,8 @@
         <p>Instagram | Facebook | Twitter</p>
     </div>
 
-    <div class="quick-links">
-        <h3>Quick Links</h3>
-        <p>Home | Shop | About | Contact</p>
-    </div>
-</footer>
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <p>Home | Shop | About | Contact</p>
+            </div>
+        </footer>
