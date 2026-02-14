@@ -1,0 +1,67 @@
+<x-layout-utama>
+
+        {{-- isi halaman --}}
+        <section id="about-us">
+            <div class="left-column">
+                <h2>About Us — Bowlé</h2>
+
+                <p>
+                    Welcome to <strong>Bowlé</strong> — tempat dimana makanan
+                    sehat jadi lebih seru, lezat, dan penuh warna!
+                </p>
+
+                <p>
+                    Kami percaya kalau hidup sehat tidak perlu ribet atau
+                    hambar. Karena itu Bowlé hadir dengan pilihan
+                    <strong>salad buah, salad sayur, healthy bowl, wrap</strong>
+                    dan makanan segar lainnya yang dibuat dari bahan-bahan
+                    terbaik, diproses tanpa ribet, dan dikemas penuh rasa.
+                </p>
+
+                <p>
+                    Di Bowlé, setiap makanan dibuat
+                    <strong>fresh to order</strong> dan diracik dengan
+                    keseimbangan nutrisi yang pas — dari protein, serat, hingga
+                    vitamin yang bikin badan lebih fit, mood lebih happy, dan
+                    hidup lebih produktif.
+                </p>
+
+                <img
+                    src="{{ asset('assets/img/10 Amazing Quinoa Recipes.jpeg') }}"
+                />
+
+                <h3>Our Mission</h3>
+                <p>
+                    Menjadikan gaya hidup sehat lebih mudah, lebih enak, dan
+                    lebih kekinian untuk semua orang.
+                </p>
+                <img
+                    src="{{ asset('assets/img/Healthy Lifestyle and Practices.jpeg') }}"
+                    alt="gambar Mission"
+                />
+
+                <h3>Our Values</h3>
+                <ul>
+                    <li>Fresh Ingredients</li>
+                    <li>Nutritious Bowls</li>
+                    <li>Clean Eating</li>
+                    <li>Tasty & Fun</li>
+                </ul>
+                <img
+                    src="{{ asset('assets/img/Top view of breakfast.jpeg') }}"
+                    alt="gambar value"
+                />
+
+                <p>
+                    Buat kamu yang lagi mulai diet, nyari makanan ringan setelah
+                    olahraga, atau cuma ingin makan enak tanpa rasa bersalah —
+                    Bowlé adalah jawabannya!
+                </p>
+
+                <p>
+                    <strong>Healthy food, but make it delicious! 🥗✨</strong>
+                </p>
+            </div>
+        </section>
+        {{-- /isi halaman --}}
+</x-layout-utama>

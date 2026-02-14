@@ -13,7 +13,7 @@ const shopNowBtn = document.getElementById("shopnowbtn");
 
 if (shopNowBtn) {
   shopNowBtn.addEventListener("click", () => {
-    window.location.href = "./product.html";
+    window.location.href = "/product.blade.php";
   });
 }
 

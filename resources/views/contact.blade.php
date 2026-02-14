@@ -1,23 +1,5 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Bowlé</title>
-        <link rel="stylesheet" href="./style.css" />
-    </head>
-
-    <body>
-        <header>
-            <h2>Bowlé</h2>
-            <nav>
-                <a href="./home.html">Home</a>
-                <a href="./about.html">About</a>
-                <a href="./product.html">Our Menu</a>
-                <a href="./contact.html">Contact</a>
-            </nav>
-        </header>
-
+<x-layout-utama>
+{{-- isi halaman --}}
         <section id="contact">
             <div class="contact-header">
                 <h1>Contact Us</h1>
@@ -52,7 +34,7 @@
                 <h2>Send Us a Message</h2>
                 <p>
                     Whether you want to order, ask about our menu, or
-                    collaborate with us, we’re just one message away.
+                    collaborate with us, we are just one message away.
                     <strong>Your healthy choice starts here.</strong>
                 </p>
 
@@ -114,38 +96,39 @@
 
                 <div class="team-members">
                     <div class="member">
-                        <img src="images/alika.jpg" alt="Alika Gazella" />
+                        <img src="{{ asset('assets/img/alika.jpeg') }}" alt="Alika Gazella" />
                         <p>Alika Gazella</p>
                     </div>
 
                     <div class="member">
-                        <img src="images/najwa.jpg" alt="Najwa Aulia" />
+                        <img src="{{ asset('assets/img/najwa.jpeg') }}" alt="Najwa Aulia" />
                         <p>Najwa Aulia</p>
                     </div>
 
                     <div class="member">
-                        <img src="images/nilna.jpg" alt="Nilna Armina" />
+                        <img src="{{ asset('assets/img/nilna.jpeg') }}" alt="Nilna Armina" />
                         <p>Nilna Armina</p>
                     </div>
 
                     <div class="member">
-                        <img src="images/nusaiba.jpg" alt="Nusaiba Dzakiyah" />
+                        <img src="{{ asset('assets/img/nusa.jpeg') }}" alt="Nusaiba Dzakiyah" />
                         <p>Nusaiba Dzakiyah</p>
                     </div>
 
                     <div class="member">
-                        <img src="images/rifah.jpg" alt="Rif'ah Syamilah" />
+                        <img src="{{ asset('assets/img/rifah.jpeg') }}" alt="Rifah Syamilah" />
                         <p>Rif'ah Syamilah</p>
                     </div>
                 </div>
 
                 <p>
                     <strong>Interested in working with us?</strong>
-                    Send us a message and let’s create something healthy and
+                    Send us a message and let's create something healthy and
                     impactful together.
                 </p>
             </div>
         </section>
         <script src="./script.js"></script>
-    </body>
-</html>
+
+</x-layout-utama>
+
